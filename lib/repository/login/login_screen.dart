@@ -1,3 +1,4 @@
+import 'package:ebook_app/repository/Screens/navigationbar/navigationbar.dart';
 import 'package:ebook_app/repository/widgets/uihelper.dart';
 import 'package:flutter/material.dart';
 
@@ -60,7 +61,12 @@ class LoginScreen extends StatelessWidget {
                       height: 48,
                       width: 295,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => bottomnavbar()));
+                        },
                         style: ElevatedButton.styleFrom(
                             backgroundColor: Color(0XFFE23744),
                             shape: RoundedRectangleBorder(
